@@ -2,7 +2,7 @@ body {
     background-color:white;
 }
 p {
-    color:red !important;
+    color:rgb(14, 3, 82) !important;
 }
 
 th,td {
@@ -15,5 +15,28 @@ ul{
   
 }
 li{
-    padding-right:4px
+    padding:10px;
+}
+
+header {
+    background-color:rgb(207, 207, 240);
+    padding:10px;
+}
+
+nav {
+    background-color:white;
+}
+footer {
+    background-color:white;
+    padding:10px
+}
+
+section {
+    background-color: rgb(168, 168, 231);
+    padding: 10px;
+    color:rgb(10, 10, 102);
+}
+
+li:hover {
+    background-color: yellow;
 }
