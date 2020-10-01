@@ -1,0 +1,21 @@
+fieldset {
+    background-color: #eeeeee;
+    border-radius: 5px;
+  }
+  
+  legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  input {
+    margin: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 10%;
+}
+  .box[style] {
+    background-color: aliceblue;
+    border: 5px solid steelblue;  
+}
