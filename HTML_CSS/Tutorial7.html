@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <title>Document</title>  
+    <link rel="stylesheet" href="./CSS/#form.css">
 </head>
 <body>
     <!-- 
@@ -12,12 +13,37 @@
 
 
 <form action="htmp://localhost/dostdata.php" method="POST" autocomplete="on">
-<label for="username">username:</label>
-<input type="text" id="username" name="username" placeholder="enter username" /> <br /> <br />
+<fieldset>
+    <legend> USER LOGIN</legend>
+<label for="fname">first name:</label>
+<input type="text" id="fname" name="fname" placeholder="enter your first name" required/> <br /> <br />
+<label for="lname">last name:</label>
+<input type="text" id="lname" name="lname" placeholder="enter your last name" required/> <br /> <br />
+
+<label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"> </br> </br>
+<label for="phone">GSM</label>
+<input type="tel" id="phone" name="phone" placeholder="+32 123-456-789" required> </br> </br>
+<label for="email">e-mail</label>
+<input type="email" id="email" name="email" placeholder="enter your e-mail" required/>
+<select>
+    <option value="Bussel">Brussel</option>
+    <option value="Gent">Gent</option>
+    <option value="Antwerpen">Antwerpen</option>
+    <option value="Namur">Namur</option>
+</select> </br> </br>
 <label for="password">password:</label> 
-<input type="password" id="password" placeholder="enter password"><br/>
+<input type="password" id="password" placeholder="enter password" required><br/> </br>
+
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label> </br> </br>
 <input type="hidden" name="process" value="1"> <br/>
 <input type="submit" value="Send this Data to Server">
+</fieldset>
 </form>
 
 </body>
