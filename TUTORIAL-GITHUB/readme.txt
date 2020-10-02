@@ -6,8 +6,12 @@ github-tutorial is my project folder.
 * make a file(README.md)
 * git add . {add current folder}
 
-2) how to creat a repository?
+2) how to clone a repository?
 
-3) how to creat a repository?
+in terminal
+
+git clone repositoryLink
+
+3) how to update a repository?
 
 4) how to creat a repository?
