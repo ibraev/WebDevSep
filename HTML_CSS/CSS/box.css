@@ -9,20 +9,23 @@ div {
 div p {
     background-color: whitesmoke;
     padding: 10px;
-}p#test {
-    width: 29%;
-    height: 30%;
-    overflow: scroll;
-    border-style: dotted;
 }
+
+p#test {
+    width: 29%;
+    height: 15%;
+    overflow: hidden;
+    border-style: dotted;
+    visibility: visible;
+    border-image: url(https://www.tomswallpapers.com/images/201507/tomswallpapers.com_28604.jpg) 11 11 round;
+    border-width: 7px;
+    -webkit-box-shadow: 11px 8px 5px 0px rgba(0, 0, 0, 0.47);
+    box-shadow: 11px 8px 5px 0px rgba(0, 0, 0, 0.47);
+}
+
 h2 {
     border-left-style: solid;
     border-color: red;
     border-width: 5px;
-    border-spacing: 10px;
-    visibility: visible;
-    border-image: url(https://www.bing.com/images/search?view=detailV2&ccid=BbhtBhyJ&id=B02D84F4DCAFAE26655B11AB84F0E42383AA4FA3&thid=OIP.BbhtBhyJoujRJB_WCm9oWwHaHa&mediaurl=https%3a%2f%2fcdn.pixabay.com%2fphoto%2f2012%2f04%2f16%2f12%2f34%2fsquares-35798_640.png&exph=640&expw=640&q=border+image+color+square&simid=608035522468777927&ck=6AD1EEA3C6D27029B0D778F0AA8FCDDF&selectedIndex=43&FORM=IRPRST&ajaxhist=0) 11 11 round;
-    border-width: -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);;
 }
 
