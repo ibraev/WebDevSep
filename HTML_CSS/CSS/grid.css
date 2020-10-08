@@ -1,0 +1,13 @@
+.body {
+    display: block;
+}
+
+.grid container {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.grid-item {
+    display: flex;
+    
+}

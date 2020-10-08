@@ -1,0 +1,14 @@
+#grid {
+    display: grid;
+    grid-gap:1%;
+    grid-auto-flow: column;
+    grid-template: repeat (2, 1fr)/repeat (2,1fr);
+}
+ .product {
+     padding: 10%;
+     background-color: violet;
+ }
+ element.style {
+     width:25% !important;
+
+ }
