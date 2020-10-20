@@ -1,4 +1,22 @@
-document.writ
+document.write ('hello world!')
+// alert (5)
+
+var intecbrussel=document.getElementById('intecbrussel');
+
+intecbrussel.innerHTML="<div class='row'>Blabla</div>";
+
+function hideit(){
+    return intecbrussel.style.display="none";
+}
+
+//alert {This is alert!}
+
+//console.log(); i see all the data to use, to analyse the data
+
+//fetch 'https://jsonplaceholder.typ1code.com/todos/1';
+//.then (res=>res)
+//.then (data=>)
+// console.log(data)
 
 function hideit {
     return intecbrusseldiv.innerHTML=5+5;
