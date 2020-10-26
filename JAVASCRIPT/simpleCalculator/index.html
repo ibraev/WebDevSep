@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Calculator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,16 +11,18 @@
   </head>
   <body>
       <div class="jumbotron">
-          <h1 class="display-3">Jumbo heading</h1>
-          <p class="lead">Jumbo helper text</p>
+          <h1 class="display-5">Simple Calculator</h1>
+          <p class="lead">a+b=result</p>
           <hr class="my-2">
-          <p>More info</p>
-          <p class="lead">
-              <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-          </p>
+          <label for="first number">Enter first number</label> </br>
+          <input type="number" name="num1" id="number1"> </br> </br>
+          <label for="second number">Enter second number</label> </br>
+          <input type="number" id="number2" value="55"> </br> </br>
+          <button type="submit" class="btn btn-info" onclick="submit1()">submit</button>
+          <p id="result">Result</p>
       </div>
     <!-- Optional JavaScript -->
-    <script src="/JAVASCRIPT/tutorial7/app.js"></script>
+    <script src="/JAVASCRIPT/simpleCalculator/app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

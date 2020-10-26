@@ -14,6 +14,7 @@ let student = {
 }
 
 console.log(student.score)
+
 let _print = 'Fullname: ' + student.firstname + " " + student.lastname; //classic way
 console.log(print)
 
@@ -24,3 +25,4 @@ Age: ${student.age}
 Favorite Author: ${student.books.title}`//modern way
 console.log(print)
 student.showstudent();
+
