@@ -13,14 +13,20 @@
       <div class="jumbotron">
           <h1 class="display-5">Simple Calculator</h1>
           <p class="lead">a+b=result</p>
+
           <hr class="my-2">
-          <label for="first number">Enter first number</label> </br>
-          <input type="number" name="num1" id="number1"> </br> </br>
-          <label for="second number">Enter second number</label> </br>
-          <input type="number" id="number2" value="55"> </br> </br>
-          <button type="submit" class="btn btn-info" onclick="submit1()">submit</button>
-      </br></br>
-          <p id="result">Result</p>
+          <div class="form-group">
+            <label for="first number">Enter first number</label></br>
+            <input type="number" value="0" id="number1"> </br> </br>
+          </div>
+
+         <div class="form-group">
+             <label for="second number">Enter second number</label></br>
+            <input type="number" id="number2" value="0">
+        </div>
+          <p class="lead"><a class="btn btn-primary btn-lg" href="#" onclick="submit1()" role="button">Calculate it!</a></p>
+
+          <h3 id="result">Result</h3>
       </div>
     <!-- Optional JavaScript -->
     <script src="/JAVASCRIPT/simpleCalculator/app.js"></script>
