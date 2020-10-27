@@ -58,11 +58,11 @@ function str4(param) {
     return param;
 }
  var result1 = str1(student);
- var result2 = str2(result1)
- var result3 = str(result2)
+ var result2 = str2(result1);
+ var result3 = str3(result2);
  var printService = str4 (result3);
 
- console.log(printService)
+ console.log(printService);
 
 
 
@@ -74,3 +74,6 @@ function str4(param) {
 
 //function3 collapse function2 collapse function
 //function3>function2>function1 > result
+
+// object
+
