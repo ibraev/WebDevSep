@@ -15,3 +15,14 @@ function mouseOver() {
     var res = str.toLowerCase();
     document.getElementById("demo").innerHTML = res;
   }
+
+
+ // A string can be converted to an array with the split() method:
+//var txt = "a,b,c,d,e";  
+// Stringtxt.split(",");         
+// Split on commastxt.split(" ");          
+// Split on spacestxt.split("|");         
+// Split on pipe
+
+
+
