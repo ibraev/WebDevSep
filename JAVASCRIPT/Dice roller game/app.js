@@ -3,7 +3,7 @@
 const firstRandomNum = Math.floor(Math.random() *6) +1
 
 //images/dice4.png upto images/dice6.png
-const firstDiceImage = 'assets/dice' + firstDiceImage + '.png';
+const firstDiceImage = '/assets/dice' + firstDiceImage + '.png';
 
 document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
 
@@ -12,7 +12,8 @@ document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
 const secondRandomNum = Math.floor(Math.random() *6) +1
 
 //images/dice4.png upto images/dice6.png
-const secondDiceImage = 'assets/dice' + secondDiceImage + '.png';
+
+const secondDiceImage = '/assets/dice' + secondDiceImage + '.png';
 
 document.querySelectorAll('img')[1].setAttribute('src', secondDiceImage);
 
@@ -20,7 +21,9 @@ document.querySelectorAll('img')[1].setAttribute('src', secondDiceImage);
 
 if (firstRandomNum > secondRandomNum) {
     document.querySelector('h1').innerHTML='The Winner is user 1';
-} else if (firstRandomNum < secondRandomNum) {document.querySelector('h1').innerHTML = 'The Winner is User 2';
+} else if (firstRandomNum < secondRandomNum) {
+    document.querySelector('h1').innerHTML = 'The Winner is User 2';
 
 } if (firstRandomNum > secondRandomNum) {
     document.querySelector('h1').innerHTML= "It's a Draw!";
+}
