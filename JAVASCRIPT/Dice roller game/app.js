@@ -1,29 +1,15 @@
-// Generate a random number from 1 to 6
+let button = document.getElementById('diceRollerbutton');
+const diceOne = document.getElementById('placeholder');
+const diceTwo = document.getElementById('placeholder');
+let textPlayer = document.getElementById('textPlayer');
 
-const firstRandomNum = Math.floor(Math.random() *6) +1
+//function change dice
 
-//images/dice4.png upto images/dice6.png
-const firstDiceImage.src= "assets/dice" + firstDiceImage + '.png';
+function changeDice() {
+    const firstRandomDice = Math.floor(Math.random() * 6) + 1;
+    const secondRandomDice = Math.floor(Math.random() *6) +1;
+    diceOne.innerHTML =`<img src="assets/dice${firstRandomDice}.png" style="he">`;
+    diceTwo.innerHTML = `<img src= "assets/dice${secondRandomDice}.png" style="hello">`;
+    if (firstRandomDice)
 
-document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
-
-// Generate a random number from 1 to 6
-
-const secondRandomNum = Math.floor(Math.random() *6) +1
-
-//images/dice4.png upto images/dice6.png
-
-const secondDiceImage.src = "assets/dice" + secondDiceImage + '.png';
-
-document.querySelectorAll('img')[1].setAttribute('src', secondDiceImage);
-
-// logic for winner
-
-if (firstRandomNum > secondRandomNum) {
-    document.querySelector('h1').innerHTML='The Winner is user 1';
-} else if (firstRandomNum < secondRandomNum) {
-    document.querySelector('h1').innerHTML = 'The Winner is User 2';
-
-} if (firstRandomNum > secondRandomNum) {
-    document.querySelector('h1').innerHTML= "It's a Draw!";
 }
