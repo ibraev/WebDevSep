@@ -3,7 +3,7 @@
 const firstRandomNum = Math.floor(Math.random() *6) +1
 
 //images/dice4.png upto images/dice6.png
-const firstDiceImage = '/assets/dice' + firstDiceImage + '.png';
+const firstDiceImage.src= "assets/dice" + firstDiceImage + '.png';
 
 document.querySelectorAll('img')[0].setAttribute('src', firstDiceImage);
 
@@ -13,7 +13,7 @@ const secondRandomNum = Math.floor(Math.random() *6) +1
 
 //images/dice4.png upto images/dice6.png
 
-const secondDiceImage = '/assets/dice' + secondDiceImage + '.png';
+const secondDiceImage.src = "assets/dice" + secondDiceImage + '.png';
 
 document.querySelectorAll('img')[1].setAttribute('src', secondDiceImage);
 

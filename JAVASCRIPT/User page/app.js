@@ -1,3 +1,7 @@
+let title = document.getElementById('title')
+let userList = document.getElementById('users');
+let getUserBtn = document.getElementById('getusers')
+
 let users = {
     "data": [
         {
@@ -87,12 +91,37 @@ let users = {
     "offset": 0
 }
 
-let listofUsers = document.getElementById('users')
-users.data.forEach(forEachFunction)
+console.log(users)
 
-
-function forEachFunction(val, index) {
-    //console.log("forEach method", index, ":", val)
-    //console.log(val.fullname)
-    return listofUsers.innerHTML += ´ <li> ${val.lastName}</li>´
+let student = {
+    scores:[1,2,3,4,5]
 }
+
+//let info = {
+ //   name = "Atilla"
+//}
+
+//let title = document.getElementsById('title')
+//title.innerHTML=info.name
+
+console.log(users.data)
+getUserBtn.addEventListener('click', function(){
+    console.log('get user function')
+    function getUsers(user, index) {
+    console.log(index)
+    console.log(user, "single object")//printing obj
+    console.log(user.lastName)
+    //title.innerHTML= ´${user.title} ${user.firstName} ${user.lastName}%%%%%
+    userList.innerHTML += `
+    <div class="card">
+    <img class="card-img-top" src="${user.picture}" alt="">
+    <div class="card-body">
+    <h4 class="card-title" id="title">${user.title}. ${user.firstName} ${user.lastName}</h4>
+        <p class="card-text">
+          <strong>Email:</strong> ${user.email}<br/>
+        </p>
+    </div>
+</div>`
+}
+users.data.forEach(getUsers)
+})
