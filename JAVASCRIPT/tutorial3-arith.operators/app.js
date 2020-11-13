@@ -22,7 +22,6 @@ var number1=5,  number2=19;
  console.log(test++)
  console.log(result) //result
 
-
  var string1="Bel";
  var string2="gium";
  //var fullString=string1+string2;
@@ -44,5 +43,5 @@ var string1=string1 +string2;
   console.log(intec)
 
   var num1=5 num2="10"
-  num1 +=num2;
+  num1 += num2;
   console.log (num1)
