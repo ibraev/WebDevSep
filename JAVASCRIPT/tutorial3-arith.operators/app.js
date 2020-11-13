@@ -19,7 +19,8 @@ var number1=5,  number2=19;
 
  var test=10;
  result=test++;
- console.log(test++)
+ console.log(test++);
+ 
  console.log(result) //result
 
  var string1="Bel";
@@ -28,7 +29,7 @@ var number1=5,  number2=19;
  console.log(fullString)
 
 //x+ =y
-string1+ =string2;
+string1 += string2;
 var string1=string1 +string2;
  console.log(string1) 
 
@@ -42,6 +43,6 @@ var string1=string1 +string2;
   intec +="Brussel"
   console.log(intec)
 
-  var num1=5 num2="10"
+  var num1=5, num2 ="10"
   num1 += num2;
-  console.log (num1)
+  console.log(num1);

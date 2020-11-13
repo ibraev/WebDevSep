@@ -56,7 +56,7 @@ console.log(myNumber) // 10
 
 console.log(result);
 
-// ternary operator
+// ? ternary operator
 
 // variablename = (condition) ? value1:value2
 
