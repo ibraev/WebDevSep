@@ -10,7 +10,7 @@
 
 // object
 
-let person = { 
+/*let person = { 
     name: 'John', 
     age: 20, 
     email: 'erfer@gmail.com'
@@ -21,3 +21,13 @@ console.log(person.name);
 //John
 
 document.getElementById("test1").innerHTML = `${person.name} is ${person.age} years old. His email: ${person.email}.`;
+*/
+
+let words = ['spray', 'limit', 'exuberant', 'destruction','elite', 'present']
+
+const modifiedWords = words.filter( (word, index, arr) => {
+  arr[index+1] +=' extra'
+  return word.length < 6
+})
+
+console.log(modifiedWords);

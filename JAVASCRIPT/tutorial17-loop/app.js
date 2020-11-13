@@ -103,19 +103,20 @@ do{
 //}
 
 // for loop
-let i=0
-for (i; i<=0; i++){
-    var oddNumber = i%2;
-    if(oddNumber !=0){
-        console.log(i)
-    }
-}
-for (let i=1; i<=100; i++) {
-    let res=i*i;
-    console.log(res)
-}
+//let i=0
+//for (i; i<=0; i++){
+//    var oddNumber = i%2;
+  //  if(oddNumber !=0){
+    //    console.log(i)
+    //}
+//}
+//for (let i=1; i<=100; i++) {
+  //  let res=i*i;
+    //console.log(res)
+//}
 
-let x,y
+let x,
+//nested for loop
 for(x=1, y=50; x<=10 && y>=50; i++) {
     console.log(x,":", y)
     y++
@@ -128,3 +129,34 @@ for(x=9; x<=10; x++) {
          console.log(result)
     }
 }
+
+let NumbersinArray = []
+for (let index = 0, index < 10; index++) {
+    NumbersinArray.push(index)
+}
+console.log("After", NumbersinArray)
+
+// for in loop
+
+let student = {
+    name="Michael",
+    age:23,
+    profession:"Dveloper"
+}
+for (objName in student) {  
+    console.log(student[objName]) //property of value
+}
+
+for (name in student) {
+    console.log(`
+        AttributeName: ${name}
+        AttributeValue: ${student[name]}
+    `)
+}
+
+// for of loop
+
+let WebDevClass['Adnan',  'Susan', 'Mikail','Elnura', 'Priya'];
+ for (let [index.student] of WebDevClass.entries){
+    console.log(student)
+ }
