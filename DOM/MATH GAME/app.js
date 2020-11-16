@@ -18,7 +18,8 @@
 
  document.getElementsById("firstnumber").value = n1; // suroo1
  document.getElementsById("secondnumber").value = n2; // suroo2
-let adds = n1 + n2;
+
+ let adds = n1 + n2;
 
 function Game() {
     var user = document.getElementsById("answer".value);

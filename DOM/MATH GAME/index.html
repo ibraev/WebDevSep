@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
   </head>
   <body>
     <div class="container">
@@ -15,24 +16,43 @@
       <div class="row p-3 text-center">
           <div class="col-md-8 border m-auto bg-secondary">
               <div class="form-group">
-                <label for="" class="display-4 text-white" id="question">Question</label> </br>
-                <div class="box1">
-                  <div class="box-col">
-                    <input type="number" id="firstnumber" class="intext11">
-                  </div>
-                    <div class="add-s">
-                      <p>+</p>
-                      </div>
-                    <div class="box-col">
-                      <input type="number" id="secondnumber" class="intext11">
-                    </div>
-                </div>
-              </br>
-                <input type="text" class="form-control bg-dark text-white " name="" id="answer" aria-describedby="helpId" placeholder="enter your answer">
-              </div>
-              <a class="btn btn-primary btn-lg" href="#" id="check" role="button" onclick="Game()">Check Answer</a>
-              <hr class="my-2">
+                <label for="" class="display-4 text-white">Question</label> </br>
+                  <!-- Main Container -->
+   <div class="main-container">
+    <div class="main">
+       <!-- Main Box -->
+       <div class="main-box">
+          <div class="show-anwser"><span id="ans"></span></div> </br>
+
+          <div class="box1">
+             <div class="box-col">
+                <input type="text" id="intext" class="intext11">
+             </div>
+
+             <div class="add-s">
+                <p>+</p>
+             </div>
+
+              <div class="box-col">
+                <input type="textf" id="intext1" class="intext11">
+             </div>
+
           </div>
+
+          <!-- text input -->
+          <div class="box2"> </br>
+             <input tpye="text" class="form-control bg-dark text-white" id="intext2">
+          </div>
+        </br>
+
+          <!-- button -->
+           <div class="box2">
+             <button class="btn btn-primary btn-lg" onclick="Game()"> Check Anwser</button> </br>
+          </div>
+       </div>
+    </div>
+ </div>
+</br>      
           <div class="col-md-4 border bg-primary">
             <label for="" class="display-4 text-white">Score</label>
             <div class="row">
@@ -52,7 +72,38 @@
      
     </div>
     <!-- Optional JavaScript -->
-    <script src="/DOM/MATH GAME/app.js"></script>
+    <script>
+      let n1 = Math.floor(Math.random()*20+1);
+      let n2 = Math.floor(Math.random()*20+1);
+
+      document.getElementById("intext").value = n1;
+      document.getElementById("intext1").value = n2;
+
+      let adds= n1 + n2;
+
+      function Game(){
+         var user= document.getElementById("intext2").value;
+
+         if( user == adds){
+            document.getElementById("correct").innerHTML = "Well Done! Your Answer is Correct";
+         }else{
+             document.getElementById("ans").innerHTML = "Correct Answer " + adds + " . Try Again";
+         }
+
+           var user= document.getElementById("intext2").value = "";
+
+
+      n1 = Math.floor(Math.random()*20+1);
+      n2 = Math.floor(Math.random()*20+1);
+
+      document.getElementById("intext").value = n1;
+      document.getElementById("intext1").value = n2;
+
+      adds= n1 + n2;
+
+
+      }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
