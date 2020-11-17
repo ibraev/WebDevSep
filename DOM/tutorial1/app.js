@@ -42,7 +42,7 @@ parent = document.forms.length;
 parent = document.forms[0].id;
 parent = document.forms[0].method
 
-console.log(paent)
+console.log(parent)
 
 //select elements with methods
 
