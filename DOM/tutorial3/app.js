@@ -1,60 +1,50 @@
-// var todoInput = document.querySelector('#todo');
-// var addTodoBtn = document.querySelector('button.btn.btn-danger'); // old button
-// var todoForm = document.querySelector('#todo-form')
-
-var todoList = document.querySelector('#todo-list-title');
-var nthListChild = document.querySelectorAll('li');
-
-nthListChild = todoList.children[0].setAttribute("style", "background-color: black;")
-
-//nthListChild = todoList.children ${"li:odd"}.setAttribute("style", "background-color: black;")
-
-nthListChild = todoList.children[7].removeChild
-
-console.log(todoList)
+var todoInput = document.querySelector('#todo');
+var addTodoBtn = document.querySelector('button.btn.btn-danger'); // old button
+var todoForm = document.querySelector('#todo-form')
+var Output;
 
 
-// function (){
-//     $("li").attr("background-color","black");
-//   });
-  
+ Output = todoInput.classList
+ Output = todoInput.placeholder;
+ Output = todoInput.getAttribute('placeholder')
+ Output = todoInput.getAttribute('company');
+ todoInput.setAttribute('attrName','AttributeValue')
+ todoInput.removeAttribute('attrName')
+ Output = addTodoBtn;
 
-// Output = todoInput.classList
-// Output = todoInput.placeholder;
-// Output = todoInput.getAttribute('placeholder')
-// Output = todoInput.getAttribute('company');
-// todoInput.setAttribute('attrName','AttributeValue')
-// todoInput.removeAttribute('attrName')
-// Output = addTodoBtn;
+ addTodoBtn.className="btn btn-primary"
 
-// addTodoBtn.className="btn btn-primary"
+ // createElement///////////////////////////
+ var newElement =  document.createElement('button') // new button
+ newElement.innerText="New Add Todo Button" // button Name
+ newElement.className="btn btn-warning text-dark"
+ newElement.setAttribute('type','submit')
 
+ todoForm.replaceChild(newElement,addTodoBtn)
 
+ console.log(newElement)
+//////////////////////////////////////////////
+ document.body.style.backgroundColor="black"
 
-// // createElement
-// var newElement =  document.createElement('button') // new button
-// newElement.innerText="New Add Todo Button" // button Name
-// newElement.className="btn btn-warning text-dark"
-// newElement.setAttribute('type','submit')
+ function createHTML(tagname){
+     return document.createElement(tagname)
+ }
 
-// todoForm.replaceChild(newElement,addTodoBtn)
+ var div = createHTML('div')
 
-// console.log(newElement)
+ div.className="container"
+ div.innerText="Div inner text"
+ div.setAttribute("id", "divid")
+ console.log(div)
+//////////////////////////////////////////
 
-// document.body.style.backgroundColor="black"
+console.log(todoInput)
+console.log(Output)
 
-// function createHTML(tagname){
-//     return document.createElement(tagname)
-// }
-
-// var div = createHTML('div')
-
-// div.className="container"
-// console.log(div)
-
-
-
-
-
-//console.log(todoInput)
-//console.log(nthListChild)
+////////////////////////- mission 
+var nthChildsofTodos = document.querySelectorAll('.list-group-item:nth-child(even)')
+console.log(nthChildsofTodos)
+ 
+ nthChildsofTodos.forEach(function(todo){
+     todo.className="list-group-item d-flex justify-content-between bg-secondary"
+ })

@@ -1,51 +1,52 @@
-// nevigation in dom three
+// navigation in dom tree
 
-var listofTodos =document.querySelector('.list-group')
-var singleTodos = document.querySelector('.list-group-item:nth-child')
-var nthChildsofTodos = document.querySelectorAll('.list-group-item:nth-child(event')
+var CardBody = document.querySelectorAll('.card-body')
+var listofTodos = document.querySelector('.list-group')
+var singleTodo = document.querySelector('.list-group-item:nth-child(3)') // obligatory i should select the number of child ex:1 or 2 or 5
+var nthChildsofTodos = document.querySelectorAll('.list-group-item:nth-child(even)')
 
-console.log(nthChildofTodos)
-console.log(listofTodos)
+ console.log(nthChildsofTodos)
+ console.log(listofTodos)
 
-console.log(singleTodos)
+ console.log(singleTodo)
+ console.log(CardBody)
 
-nthChildsofTodos.forEach(function (todo){
-    todo.className="list-group"//// not finished line
-})
+ nthChildsofTodos.forEach(function(todo){
+     todo.className="list-group-item d-flex justify-content-between bg-secondary"
+ })
 
-// child nodels
+
+// child nodes
 
 var ConsoleResult;
-ConsoleResult = listofTodos.childNodes[0]
-ConsoleResult = listofTodos.childNodes[listofTodos.children.length-1]
-console.log("Console Result>", ConsoleResult)
+ConsoleResult = listofTodos.childNodes[0];
+ConsoleResult = listofTodos.children[0];
+console.log("Console Result>",ConsoleResult)
 
-let arr = [1,2,3,4,5,6,7]
-console.log(arr[2])
+let arr  = [1,2,3,4,5,6,"this is last item"]
 console.log(arr[arr.length-1])
 
-ConsoleResult.innerHTML="This is todo title - new"
-
+ConsoleResult.innerHTML="This is todo title - new "
 ConsoleResult = CardBody[1];
+
 ConsoleResult = ConsoleResult.children[1].textContent="Title has been updated";
 ConsoleResult = CardBody[1];
+
 ConsoleResult = ConsoleResult.firstElementChild
 ConsoleResult = CardBody[1];
-//ConsoleResult = ConsoleResult.childElementCount;
+// ConsoleResult = ConsoleResult.childElementCount;
 // ConsoleResult = ConsoleResult.children.length;
-// ConsoleResult = ConsoleResult.LastElementChild;
+// ConsoleResult = ConsoleResult.lastElementChild
 
-console.log(ConsoleResult)
 
-// nextElementSibling
+// nextElementSibling 
 
-// ConsoleResult = singleTodo.nextElementSibling;
+ConsoleResult = singleTodo.nextElementSibling;
 
 // previousElement
 
-//ConsoleResult = singleTodo.previousElementSibling
+ ConsoleResult = singleTodo.previousElementSibling
+ ConsoleResult = singleTodo.nextElementSibling.nextElementSibling
+ ConsoleResult = singleTodo.previousElementSibling.previousElementSibling
 
-ConsoleResult= singleTodo.nextElementSibling.nextElementSibling
-ConsoleResult = singleTodo.previousElementSibling.previousElementSibling
-
-console.log("Result", ConsoleResult)
+ console.log("Result", ConsoleResult)
