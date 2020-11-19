@@ -1,50 +1,76 @@
 var todoInput = document.querySelector('#todo');
 var addTodoBtn = document.querySelector('button.btn.btn-danger'); // old button
 var todoForm = document.querySelector('#todo-form')
+var ListofTodos = document.querySelector('.list-group')
 var Output;
 
 
- Output = todoInput.classList
- Output = todoInput.placeholder;
- Output = todoInput.getAttribute('placeholder')
- Output = todoInput.getAttribute('company');
- todoInput.setAttribute('attrName','AttributeValue')
- todoInput.removeAttribute('attrName')
- Output = addTodoBtn;
+Output = todoInput.classList
+Output = todoInput.placeholder;
+Output = todoInput.getAttribute('placeholder')
+Output = todoInput.getAttribute('company');
+todoInput.setAttribute('attrName', 'AttributeValue')
+todoInput.removeAttribute('attrName')
+Output = addTodoBtn;
+let todoArray;
+addTodoBtn.className = "btn btn-primary"
 
- addTodoBtn.className="btn btn-primary"
+function createHTML(tagname) {
+    return document.createElement(tagname)
+}
 
- // createElement///////////////////////////
- var newElement =  document.createElement('button') // new button
- newElement.innerText="New Add Todo Button" // button Name
- newElement.className="btn btn-warning text-dark"
- newElement.setAttribute('type','submit')
+var div = createHTML('div')
 
- todoForm.replaceChild(newElement,addTodoBtn)
+div.className = "container"
+console.log(div)
 
- console.log(newElement)
-//////////////////////////////////////////////
- document.body.style.backgroundColor="black"
+function addTodoToArray(todo) {
 
- function createHTML(tagname){
-     return document.createElement(tagname)
- }
+    if (todoArray === null || todoArray === undefined) {
+        todoArray = []; // init array
+        console.log('array initialized')
+        todoArray.push(todo)
+    } else {
+        todoArray.push(todo)
+    }
 
- var div = createHTML('div')
+    console.log(todoArray)
 
- div.className="container"
- div.innerText="Div inner text"
- div.setAttribute("id", "divid")
- console.log(div)
-//////////////////////////////////////////
+}
+
+function addTodo(event) {
+    event.preventDefault();
+    var li = document.createElement('li')
+    var title = document.createTextNode(todoInput.value)
+    li.className = "list-group-item d-flex justify-content-between"
+    var a = document.createElement('a')
+    a.href = "#"
+    a.className = "delete-item"
+    var i = document.createElement('i')
+    i.className = "fa fa-remove"
+    a.innerHTML= "remove"
+    a.appendChild(i)
+    li.appendChild(title)
+    li.appendChild(a)
+    ListofTodos.appendChild(li)
+    console.log(todoInput.value)
+    addTodoToArray(todoInput.value)
+    
+    
+    a.addEventListener('click', () => this.remove(li))
+    
+}
+
+addTodoBtn.addEventListener('click', addTodo)
+
+
 
 console.log(todoInput)
 console.log(Output)
 
 ////////////////////////- mission 
-var nthChildsofTodos = document.querySelectorAll('.list-group-item:nth-child(even)')
-console.log(nthChildsofTodos)
+// var myLinkList = document.getElementById(“list”)
+// var myRemovedLink = myLinkList.lastChild;
+// myLinkList.removeChild(myRemoveLink);
+////////////////////////
  
- nthChildsofTodos.forEach(function(todo){
-     todo.className="list-group-item d-flex justify-content-between bg-secondary"
- })
