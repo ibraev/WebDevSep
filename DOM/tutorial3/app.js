@@ -48,21 +48,25 @@ function addTodo(event) {
     a.className = "delete-item"
     var i = document.createElement('i')
     i.className = "fa fa-remove"
-    a.innerHTML= "remove"
     a.appendChild(i)
     li.appendChild(title)
     li.appendChild(a)
     ListofTodos.appendChild(li)
-    console.log(todoInput.value)
+    console.log("todo Input Value=>",todoInput.value)
     addTodoToArray(todoInput.value)
-    
-    
-    a.addEventListener('click', () => this.remove(li))
-    
+       
 }
-
 addTodoBtn.addEventListener('click', addTodo)
 
+function addTodoToArray(event){
+    console.log(event)
+    addTodo.remove()
+    
+   console.log('testing')
+ }
+.addEventListener('click', todoInput)
+
+//a.addEventListener('click', remove)
 
 
 console.log(todoInput)
