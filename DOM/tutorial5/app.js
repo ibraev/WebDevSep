@@ -24,11 +24,12 @@
 /////////// example
 
 var [fistname, lastname, email, street, city, zipcode, birthday,phone, pass, confirm_pass, term] = document.querySelectorAll('input');
-var [country, gender, countery_code]
+
+var [country, gender, countery_code]= document.querySelector('select')
 
 var submitBtn = document.querySelector('button')
 
-let formData=[]
+let formDatas=[]
 
 submitBtn.addEventListener('click', function(e) {
     if (term.checked == true){
@@ -47,8 +48,9 @@ submitBtn.addEventListener('click', function(e) {
             confirm:confirm_pass.value
         }
         //console.log(formObj)
-        let temp = formObj // update
-        temp.push(formObj)  // updated array with new obj
+        let temp = formDatas 
+        temp.push(formObj) // update
+        formDatas = temp; // updated array with new obj
     }else {
         console.log('not accepted')
     }
@@ -58,5 +60,5 @@ submitBtn.addEventListener('click', function(e) {
 })
 
 
-console.log(term.checked)
-console.log(input1)
+//console.log(term.checked)
+//console.log(input1)
