@@ -44,7 +44,7 @@ submitBtn.addEventListener('click', function(e) {
             zipcode:zipcode.value,
             gender:gender.selectedOption[0].value,
             phone:countery_code.selectedOption[0].value + phone.value // +322 +4555626 // +324416641
-            password:pass.value,
+            password: pass.value,
             confirm:confirm_pass.value
         }
         //console.log(formObj)
