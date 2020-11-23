@@ -3,57 +3,65 @@
 var windowObj = window;
 windowObj = this;
 
-var window = {
+var windows = {
     alert: function (string) {
         console.log(string)
     }
 }
 
-window.alert('test')
+
+windows.alert('test')
+
 
 var windowObj = window;
-console.log(window.outerWidth)
-console.log(outerHeight)
 
-// window.addEventListener('resize', function(){
-//   console.log(window.outerWidth)
-//  console.log(outerHeight)
+console.log(window.outerHeight)
+console.log(window.outerWidth)
+
+// window.addEventListener('resize', function () {
+//     console.log(window.outerHeight)
+//     console.log(window.outerWidth)
 // })
 
 var parent = document;
-parent = document.all
+parent = document.all;
 parent = document.all.length;
-parent = document.all[document.all.length -1];
+parent = document.all[document.all.length -1]
 parent = document.body;
 parent = document.head;
-parent = document.location;
+parent = document.location
 parent = document.scripts;
+parent = document.links;
 parent = document.links[0].getAttribute('href')
 parent = document.links[0].classList
 parent = document.links[0].className
-//parent = document.location.toString
-// document.location.reload();
-// parent = parent[5]
 
-// FORMS
+// forms
 
 parent = document.forms;
 parent = document.forms.length;
-parent = document.forms[0].id;
+parent = document.forms[0].id
 parent = document.forms[0].method
 
 console.log(parent)
 
-//select elements with methods
+
+// select elements with methods
 
 /*
 getElementById
+getElementByClassName
+getElementByTagName
+querySelector
+querySelectorAll
 */
 
 // getElementById method
 
 var htmlElement;
+
 htmlElement = document.getElementById('intecbrussel')
+
 
 // by className
 
@@ -65,33 +73,39 @@ htmlElement = document.getElementsByClassName('form-control')
 htmlElement = document.getElementsByTagName('a')
 htmlElement = document.getElementsByTagName('input')
 
+
 // querySelector and querySelectorAll
 
 htmlElement = document.querySelector('a.btn.btn-primary')
 htmlElement = document.querySelector('input')
-// htmlElement = document.querySelector('#intecbrussel')
+//htmlElement = document.querySelector('#intecbrussel');
 
-//querySelectorAll
+// querySelectorAll
 
 htmlElement = document.querySelectorAll('input');
 htmlElement = document.querySelectorAll('a.btn.btn-primary')
 htmlElement = document.querySelectorAll('#intecbrussel')
+htmlElement = document.querySelectorAll('input')
 
-// htmlElement = htmlElement[1].value   staticway
+// htmlElement = htmlElement[1].value
 
 htmlElement.forEach(function(element){
     console.log(element.value)
-
+    
 })
 
+
 htmlElement = document.querySelectorAll('a.btn.btn-primary');
-htmlElement.forEach(function(button){
+
+htmlElement.forEach(function(button){ // forEach 
     console.log(button)
-    button.innerHTML = "Click"
-    button.addEventListener('click', function () {
+    button.innerHTML="CLICK"
+    button.addEventListener('click',function(){ // dom event
         console.log('this is just a test!!!!')
     })
 })
 
+
 console.log(typeof htmlElement)
+
 console.log(htmlElement)
