@@ -4,6 +4,7 @@ let addTodoBtn = document.querySelector('button.btn.btn-danger'); // old button
 let todoForm = document.querySelector('#todo-form')
 let ListofTodos = document.querySelector('.list-group')
 let ClearTodos = document.querySelector('#clear-todos')
+let filteredTodos;
 let Output;
 
 
@@ -59,6 +60,19 @@ ClearTodos.addEventListener('click', function (e) {
     }
 
 })
+
+
+//  const filteredTodos = target.filter((e) => { 
+//     if (e.target.name === e.name){
+//         return e.target.style.backgroundColor ="yellow"
+//     }
+//  })
+
+// filteredTodos.addEventListener('click', function(e){
+//     if(e.target.name=== e.name){
+//         return e.name.style.backgroundColor= "yellow"
+//     }
+// })
 
 function addTodo(event) {
     event.preventDefault();
